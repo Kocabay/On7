@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hotel On7</title>
+    <!-- CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Bootstrap cdn Link -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <!-- BS JS LİNK -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- BS5 İCON CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css"
+    />
+    <!-- Fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- HEADER START -->
+    <section class="header">
+      <div class="toggle">|||</div>
+      <nav>
+        <a href="/">Anasayfa</a>
+        <a href="/">Kurumsal</a>
+        <a href="/">Hizmetlerimiz</a>
+        <a href="/">Fırsatlar</a>
+        <a href="/">Haberler</a>
+        <a href="/">Rezervasyon</a>
+        <a href="/">Aktivite</a>
+        <a href="/">İletişim</a>
+        <a href="/">>En</a>
+      </nav>
+    </section>
+    <!-- HEADER END -->
+    <!--! Rezervasyon Start -->
+    <section>
+      <div class="main-rez">
+        <div class="dropdown-container">
+          <button
+            class="btn btn-secondary bg-dark dropdown-toggle"
+            type="button"
+            id="dropdownMenuButton"
+            data-toggle="dropdown"
+            aria-haspopup="true"
+            aria-expanded="false"
+          >
+            ODALAR
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Standart Oda</a>
+            <a class="dropdown-item" href="#">Deluxe Oda</a>
+            <a class="dropdown-item" href="#">Suite Oda</a>
+            <a class="dropdown-item" href="#">Rooftop Deluxe Oda</a>
+          </div>
+        </div>
+        <div class="date-selection">
+          <!-- <label for="checkin">Giriş Tarihi :</label> -->
+          <div class="date-area btn btn-warning mx-5 w-100 align-items-center">
+            <p>GİRİŞ TARİHİ:</p>
+            <input
+              onfocus="this.showPicker()"
+              type="date"
+              id="checkin"
+              name="checkin"
+              class="date"
+            />
+          </div>
+          <div class="date-area btn btn-warning mx-5 w-100 align-items-center">
+            <p>ÇIKIŞ TARİHİ:</p>
+            <input
+              onfocus="this.showPicker()"
+              type="date"
+              id="checkin"
+              name="checkin"
+              class="date"
+            />
+          </div>
+          <select
+            class="form-select mx-5 bg-body"
+            aria-label="Default select example bg-dark"
+          >
+            <option selected>Kişi Sayısı</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="3">Daha Fazla.</option>
+          </select>
+        </div>
+        <a href="/">
+          <button class="buttononlne w-100 mx-5">ONLİNE REZERVASYON</button></a
+        >
+      </div>
+    </section>
+    <!-- Rezervasyon End-->
+    <!--! Odalar Start -->
+    <section class="odalar">
+      <div class="main-hg">
+        <h2>HOŞGELDİNİZ</h2>
+        <h3>Hotel On 7</h3>
+        <p class="yazı">
+          Sakarya'nın hızla gelişen ilçesi Serdivan'ın kalbinde konumlanmış iş
+          dünyasının merkezinde yer alan büyük alışveriş merkezlerine sadece
+          birkaç dakika mesafede bulunan Hotel ON7 Sakarya, konforlu 78 odası ve
+          yüksek teknolojiye sahip toplantı salonlarıyla iş veya turistik amaçlı
+          seyahat edenler için mükemmel bir seçim.
+          <br />
+          Dünyaca ünlü Türk misafirperverliği'nin en iyi örneğini sunma
+          hedefiyle yola çıkan Hotel ON7 Sakarya, üst düzey hizmet anlayışı, göz
+          dolduran mimari tasarımı ve modern çizgileriyle unutulmaz bir
+          konaklama deneyimi yaşatıyor.
+        </p>
+        <h1>ODALARIMIZ</h1>
+      </div>
+      <div class="odalar-foto">
+        <div class="foto">
+          <img src="image/odalar/standart.jpg" />
+          <div class="aciklama">STANDART ODA</div>
+        </div>
+        <div class="foto">
+          <img src="image/odalar/deluxe.jpg" />
+          <div class="aciklama">DELUXE ODA</div>
+        </div>
+        <div class="foto">
+          <img src="image/odalar/suite.jpg" />
+          <div class="aciklama">SUITE ODA</div>
+        </div>
+        <div class="foto">
+          <img src="image/odalar/rooftop.jpg" />
+          <div class="aciklama">ROOFTOP DELUXE ODA</div>
+        </div>
+      </div>
+    </section>
+    <!--! Odalar End  -->
+
+    <!-- ! Location Start -->
+    <section>
+      <div class="location">
+        <div class="location-d">
+          <i class="fa-solid fa-cloud-sun fa-3x"></i>
+          <p>30°C <br />SAKARYA</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-building fa-3x"></i>
+          <p>
+            İş Dünyasının <br />
+            Merkezinde
+          </p>
+        </div>
+
+        <div>
+          <i class="fa-solid fa-plane-departure fa-3x"></i>
+          <p>
+            Cengiz Topel <br />
+            Havaalanına 30 km
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-bus fa-3x"></i>
+          <p>Otogara <br />30 km</p>
+        </div>
+        <div>
+          <i class="fa-solid fa-plane fa-3x"></i>
+          <p>
+            Sabiha Gökçen <br />
+            Havaalanına 117 km
+          </p>
+        </div>
+        <div>
+          <i class="fa-solid fa-train fa-3x"></i>
+          <p>
+            Yüksek Hızlı <br />
+            Tren 8 km
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- ! Location End -->
+
+    <!-- ! Toplantı& Organizasyon Start -->
+    <section class="org-oda">
+      <div class="container-bg">
+        <div class="container-top">
+          <div class="d-flex flex-column flex-lg-row">
+            <div class="toplantiorgnarea mx-auto">
+              <h1 class="display-4 fw-semibold lh-base">
+                TOPLANTI & <br />
+                ORGANİZASYON
+              </h1>
+              <p class="fw-light">
+                Şirket yemekleri, bayii toplantıları, kongreler, seminerler,
+                ürün ve lansman toplantılarıyla işinizi geliştirmenizde kaliteyi
+                sizlere sunarken; nikah, nişan, doğum günü, babyshower gibi özel
+                gün organizasyonlarıyla da mutlu anlarınızın profesyonel ellerde
+                sorunsuz gerçekleşmesini sağlıyoruz. Taleplerinize göre uygun
+                kapasitede, gerekli teknik ekipmanlarla ve profesyonel ekiple
+                toplantı salonlarımızı istediğiniz düzende hazırlayıp sizlere
+                sunuyoruz.
+              </p>
+            </div>
+            <div class="">
+              <div id="carouselExampleIndicators" class="carousel slide">
+                <div class="carousel-indicators justify-content-center">
+                  <button
+                    id="btnc"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="0"
+                    class="active"
+                    aria-current="true"
+                    aria-label="Slide 1"
+                  ></button>
+                  <button
+                    id="btnc"
+                    type="button"
+                    data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide-to="1"
+                    aria-label="Slide 2"
+                  ></button>
+                </div>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="image/toplantı/toplantı1.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="image/toplantı/toplantı2.jpg"
+                      class="d-block w-100"
+                      alt="..."
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ! Toplantı& Organizasyon End -->
+
+    <!-- ! Yemek & Restaurant Start -->
+    <section class="yemek">
+      <div id="carouselExampleIndicators1" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            id="btnc"
+            type="button"
+            data-bs-target="#carouselExampleIndicators1"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            id="btnc"
+            type="button"
+            data-bs-target="#carouselExampleIndicators1"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            id="btnc"
+            type="button"
+            data-bs-target="#carouselExampleIndicators1"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner khvlti">
+          <div class="carousel-item active">
+            <img
+              src="image/yemek/kahvalti1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img src="image/yemek/pablo1.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/yemek/on7.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ! Yemek & Restaurant End -->
+
+    <!--!Fitness Salonu Start -->
+    <section class="yemek">
+      <div id="carouselExampleIndicators2" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            id="btncftns"
+            type="button"
+            data-bs-target="#carouselExampleIndicators2"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            id="btncftns"
+            type="button"
+            data-bs-target="#carouselExampleIndicators2"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            id="btncftns"
+            type="button"
+            data-bs-target="#carouselExampleIndicators2"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner ftns">
+          <div class="carousel-item active">
+            <img src="image/fitness.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/fitness.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/fitness.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--!Fitness Salonu End -->
+
+    <!-- ! Fırsatlar Start -->
+    <section class="yemek">
+      <div id="carouselExampleIndicators3" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            id="btncfirst"
+            type="button"
+            data-bs-target="#carouselExampleIndicators3"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            id="btncfirst"
+            type="button"
+            data-bs-target="#carouselExampleIndicators3"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            id="btncfirst"
+            type="button"
+            data-bs-target="#carouselExampleIndicators3"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner frst">
+          <div class="carousel-item active">
+            <img src="image/fırsatlar.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/fırsatlar.jpg" class="d-block w-100" alt="..." />
+          </div>
+          <div class="carousel-item">
+            <img src="image/fırsatlar.jpg" class="d-block w-100" alt="..." />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ! Fırsatlar End -->
+
+    <!-- ! Galeri START -->
+    <section class="galeri">
+      <h1 class="text-center glrbaslk">GALERİ</h1>
+      <div id="carouselExampleIndicators4" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            id="btncftns"
+            type="button"
+            data-bs-target="#carouselExampleIndicators4"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            id="btncftns"
+            type="button"
+            data-bs-target="#carouselExampleIndicators4"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            id="btncftns"
+            type="button"
+            data-bs-target="#carouselExampleIndicators4"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner" id="galerix">
+          <div class="carousel-item active">
+            <img
+              src="image/Galeri/galeri1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri4.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri5.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri6.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/Galeri/galeri7.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri8.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri9.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri10.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri11.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri15.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/Galeri/galeri13.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri14.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri15.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri16.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+            <img
+              src="image/Galeri/galeri18.jpg"
+              class="d-block w-100"
+              alt="..."
+            /><br /><br /><br /><br />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- !Galeri End -->
+
+    <!-- !Misafir Yorum Start -->
+    <section class="msfr">
+      <div id="carouselExampleIndicators5" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            id="btnmsfr"
+            type="button"
+            data-bs-target="#carouselExampleIndicators5"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            id="btnmsfr"
+            type="button"
+            data-bs-target="#carouselExampleIndicators5"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            id="btnmsfr"
+            type="button"
+            data-bs-target="#carouselExampleIndicators5"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner frst">
+          <div class="carousel-item active">
+            <img
+              src="image/misafir/misafir1.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/misafir/misafir2.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <div class="carousel-item">
+            <img
+              src="image/misafir/misafir3.jpg"
+              class="d-block w-100"
+              alt="..."
+            />
+          </div>
+          <br /><br /><br /><br /><br />
+        </div>
+      </div>
+    </section>
+    <!-- !Misafir Yorum End -->
+
+    <!-- !Haberler Start -->
+    <section class="haber bg-dark">
+      <h1
+        class="container text-center haber-h1 d-flex justify-content-center align-items-center"
+      >
+        BİZDEN HABERLER
+      </h1>
+      <div class="card mb-3">
+        <div class="row row-cols-1 row-cols-md-2 g-3">
+          <div class="col">
+            <img
+              src="image/haberler1.jpg"
+              class="img-fluid rounded-start w-100"
+              alt="..."
+            />
+          </div>
+          <div class="body col p-5">
+            <h5 class="card-title">
+              Hotel On7 Muhteşem Bir Ziyafetle Kapılarını Misafirlerine Açtı
+            </h5>
+            <h6 class="card-title">24 ARALIK 2017</h6>
+            <p class="card-text">
+              Çoğunluğu şehir ve bahçe manzaralı, 16 deluxe, 59 superior odası
+              ve farklı özelliklere sahip olan 2 suit ve 1 engelli odası ile
+              Hotel On 7, misafirlerine gerek tatil gerek iş seyahatlerinde
+              kalite ve konforu bir arada sunuyor..
+            </p>
+            <a
+              class="icon-link text-bg-info rounded p-2"
+              href="/"
+              id="card-button"
+            >
+              >Haberin Devamı
+              <svg class="bi" aria-hidden="true">
+                <use xlink:href="#arrow-right"></use>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br /><br /><br />
+    </section>
+    <!-- !Haberler End -->
+
+    <!-- ! SOSYAL MEDYA START-->
+
+    <section class="soscial gap-5">
+      <div>
+        <h1>
+          Bizi Sosyal Medyada <br />
+          Takip Edin.
+        </h1>
+      </div>
+      <div>
+        <a href="">
+          <i class="bi bi-facebook"></i>
+        </a>
+
+        <a href="">
+          <i class="bi bi-twitter"></i>
+        </a>
+        <a href="">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="">
+          <i class="bi bi-linkedin"></i>
+        </a>
+      </div>
+      <div>
+        <img src="image/on7.png" class="gap-5 mx-5" alt="" />
+      </div>
+    </section>
+    <!-- ! SOSYAL MEDYA END-->
+    <!-- ! E-POSTA START -->
+    <section class="eposta">
+      <div>
+        <h3>E-posta Aboneliği</h3>
+        <p>
+          Fırsat ve kampanyalardan hızlıca haberdar olmak için e-posta
+          Aboneliğine üye olun.
+        </p>
+      </div>
+      <div>
+        <p>ADINIZ SOYADINIZ</p>
+        <input type="text" />
+      </div>
+      <div>
+        <p>E-MAİL ADRESİNİZ</p>
+        <input type="e-mail" />
+      </div>
+      <button>Abone Ol!</button>
+    </section>
+    <!-- ! E-POSTA END-->
+    <section class="w-100" id="etiket">
+      <img src="etiket.jpg" alt="" />
+    </section>
+    <!-- ! Footer  START-->
+    <section>
+      <footer class="page-footer bg-dark indigo" id="footer">
+        <div class="container text-start text-decoration-none m-5" id="footer2">
+          <div class="row">
+            <div class="col-md-2 mx-auto">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/">Kurumsal</a>
+                </li>
+                <li>
+                  <a href="/">Hakkımızda</a>
+                </li>
+                <li>
+                  <a href="/">Değerlerimiz</a>
+                </li>
+                <li>
+                  <a href="/">İnsan Kaynakları</a>
+                </li>
+              </ul>
+            </div>
+            <hr class="clearfix d-md-none" />
+            <div class="col-md-2 mx-auto">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/">Standart Odalar</a>
+                </li>
+                <li>
+                  <a href="/">Deluxe Odalar</a>
+                </li>
+                <li>
+                  <a href="/">Suite Odalar</a>
+                </li>
+              </ul>
+            </div>
+            <hr class="clearfix d-md-none" />
+            <div class="col-md-2 mx-auto">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/">17 Cafe</a>
+                </li>
+                <li>
+                  <a href="/">No 54 Restaurant</a>
+                </li>
+              </ul>
+            </div>
+            <hr class="clearfix d-md-none" />
+            <div class="col-md-2 mx-auto">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/">Büyük Salon</a>
+                </li>
+                <li>
+                  <a href="/">Küçük Salon</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-2 mx-auto">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="/">Fırsatlar</a>
+                </li>
+                <li>
+                  <a href="/">Bizden Haberler</a>
+                </li>
+                <li>
+                  <a href="/">Aktiviteler</a>
+                </li>
+                <li>
+                  <a href="/">İletişim</a>
+                </li>
+              </ul>
+            </div>
+            <h5>>EN</h5>
+          </div>
+          <hr class="fczgi" />
+        </div>
+      </footer>
+    </section>
+    <section class="bg-dark">
+      <div id="sözleşme">
+        <div>
+          <i class="bi bi-file-earmark-text"></i>
+          <p>Satış Sözleşmesi</p>
+        </div>
+        <div>
+          <i class="bi bi-file-earmark-text"></i>
+          <p>Kullanım Sözleşmesi</p>
+        </div>
+        <div>
+          <i class="bi bi-file-earmark-text"></i>
+          <p>Gizlilik Sözleşmesi</p>
+        </div>
+      </div>
+    </section>
+    <hr class="alt" />
+    <section class="adres">
+      <div class="bg-dark özet">
+        <a href="/"> <img src="image/on7.png" /></a>
+        <p>
+          Kemal Paşa Mh. Kenan Sofuoğlu Cd. Serdivan,Sakarya/Türkiye
+          <br />
+          +90 264 275 17 17 / info@hotelon7.com.tr
+        </p>
+      </div>
+      <hr class="alt" />
+      <div class="">
+        <p class="text-center fs-4 ftr">©2017 Hotel On 7 All Rights Reserved</p>
+      </div>
+    </section>
+    <!--! Footer  End-->
+  </body>
+</html>
